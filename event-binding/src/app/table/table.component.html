@@ -1,0 +1,86 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+  rel="stylesheet"
+/>
+<section class="c-table">
+  <div class="c-table__title">Dados dos continentes</div>
+
+  <nav class="c-table__nav">
+    <div class="c-table__nav--north-america" (click)="getNorthAmerica()">
+      América do Norte
+    </div>
+
+    <div class="c-table__nav--south-america" (click)="getCentralAmerica()">
+      América Central
+    </div>
+
+    <div class="c-table__nav--south-america" (click)="getSouthAmerica()">
+      América do Sul
+    </div>
+
+    <div class="c-table__nav--europe" (click)="getEurope()">Europa</div>
+
+    <div class="c-table__nav--africa" (click)="getAfrica()">Africa</div>
+
+    <div class="c-table__nav--asia" (click)="getAsia()">Ásia</div>
+
+    <div class="c-table__nav--oceania" (click)="getOceania()">Oceania</div>
+  </nav>
+
+  <div class="c-table__continents-container">
+    <ng-container *ngIf="isVisibleNorthAmerica">
+      <div
+        class="c-table__north-america-container"
+        *ngFor="let item of northAmericaData"
+      >
+        <div class="c-table__north-america-container--itens">
+          {{ item }}
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="isVisibleCentralAmerica">
+      <div
+        class="c-table__central-america-container"
+        *ngFor="let item of centralAmericaData"
+      >
+        {{ item }}
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="isVisibleSouthAmerica">
+      <div
+        class="c-table__south-america-container"
+        *ngFor="let item of southAmericaData"
+      >
+        {{ item }}
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="isVisibleEurope">
+      <div class="c-table__europe-container" *ngFor="let item of europeData">
+        {{ item }}
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="isVisibleAfrica">
+      <div class="c-table__africa-container" *ngFor="let item of africaData">
+        {{ item }}
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="isVisibleAsia">
+      <div class="c-table__asia-container" *ngFor="let item of asiaData">
+        {{ item }}
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="isVisibleOceania">
+      <div class="c-table__oceania-container" *ngFor="let item of oceaniaData">
+        {{ item }}
+      </div>
+    </ng-container>
+  </div>
+</section>

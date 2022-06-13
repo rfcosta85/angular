@@ -1,0 +1,76 @@
+<section class="c-courses">
+  <div class="c-courses__title-container">
+    <h1 class="c-courses__title-container--title">Cursos</h1>
+  </div>
+
+  <select #course (change)="(0)">
+    <option value="front-end">Front-End</option>
+    <option value="back-end">Back-End</option>
+    <option value="devops">Devops</option>
+    <option value="data-science">Data Science</option>
+  </select>
+
+  <div class="c-courses__subtitle {{ course.value }}" role="courses">
+    <h3 class="c-courses__subtitle--courses-title">{{ course.value }}</h3>
+  </div>
+
+  <div
+    class="courses"
+    role="courses"
+    [class.front-end]="course.value == 'front-end'"
+    [style.display]="course.value == 'front-end' ? 'block' : 'none'"
+  >
+    <div *ngFor="let item of frontEnd" class="courses__list">
+      <ul>
+        <li>
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div
+    class="courses"
+    role="courses"
+    [class.back-end]="course.value == 'back-end'"
+    [style.display]="course.value == 'back-end' ? 'block' : 'none'"
+  >
+    <div *ngFor="let item of backEnd" class="courses__list">
+      <ul>
+        <li>
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div
+    class="courses"
+    role="courses"
+    [class.devops]="course.value == 'devops'"
+    [style.display]="course.value == 'devops' ? 'block' : 'none'"
+  >
+    <div *ngFor="let item of devops" class="courses__list">
+      <ul>
+        <li>
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div
+    class="courses"
+    role="courses"
+    [class.data-science]="course.value == 'data-science'"
+    [style.display]="course.value == 'data-science' ? 'block' : 'none'"
+  >
+    <div *ngFor="let item of dataScience" class="courses__list">
+      <ul>
+        <li>
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

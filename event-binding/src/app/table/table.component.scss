@@ -1,0 +1,64 @@
+.c-table {
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    background: linear-gradient(
+      90deg,
+      rgba(22, 11, 213, 1) 27%,
+      rgba(9, 9, 121, 1) 60%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    color: white;
+    padding: 20px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid black;
+    padding: 8px;
+
+    &--north-america,
+    &--south-america,
+    &--europe,
+    &--africa,
+    &--asia,
+    &--oceania {
+      cursor: pointer;
+    }
+
+    &--north-america:hover,
+    &--south-america:hover,
+    &--europe:hover,
+    &--africa:hover,
+    &--asia:hover,
+    &--oceania:hover {
+      color: red;
+      padding: 5px;
+      box-shadow: 0 8px 8px #999;
+    }
+  }
+
+  &__continents-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+  }
+}
+
+.oi {
+  display: flex;
+  flex-direction: column;
+}

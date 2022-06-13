@@ -1,0 +1,62 @@
+.c-euro-capitals {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    background: linear-gradient(
+      150deg,
+      rgba(232, 227, 39, 1) 0%,
+      rgba(14, 26, 187, 1) 50%,
+      rgba(232, 227, 39, 1) 100%
+    );
+
+    color: #ffff;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+
+    padding: 15px;
+  }
+
+  .c-which-capitals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    margin: 15px;
+    padding: 20px;
+
+    border: solid black;
+
+    &__research-container {
+      display: flex;
+      flex-direction: column;
+
+      &--title {
+        font-weight: 600;
+      }
+      &--input {
+        margin-top: 15px;
+      }
+    }
+
+    .c-countries {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__title {
+        font-weight: 600;
+      }
+      &__countries-names {
+        margin-top: 10px;
+      }
+    }
+  }
+  .c-show-informations {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,9 @@
+.c-mock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__data {
+    margin-top: 15px;
+  }
+}

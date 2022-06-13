@@ -1,0 +1,49 @@
+<section class="c-euro-capitals">
+  <div class="c-euro-capitals__title">Qual Capital?</div>
+  <div class="c-which-capitals">
+    <div class="c-which-capitals__research-container">
+      <div class="c-which-capitals__research-container--title">
+        Quer saber quais são as capitais dos países membros da zona euro?
+      </div>
+      <div class="c-which-capitals__research-container--input">
+        Digite o país desejado:
+        <input type="text" [(ngModel)]="title" placeholder="Digite um país" />
+        <button class="c-button" (click)="showCountry()">Pesquisar</button>
+      </div>
+    </div>
+    <div class="c-countries">
+      <div class="c-countries__title">Membros monetários</div>
+      <div class="c-countries__countries-names">
+        <app-mock [monetaryCountries]="monetaryMembersCountries"></app-mock>
+      </div>
+    </div>
+    <div class="c-countries">
+      <div class="c-countries__title">Membros monetários</div>
+      <div class="c-countries__countries-names">
+        <app-mock [monetaryCountries]="monetaryMembersCountries2"></app-mock>
+      </div>
+    </div>
+    <div class="c-countries">
+      <div class="c-countries__title">Membros monetários</div>
+      <div class="c-countries__countries-names">
+        <app-mock [monetaryCountries]="monetaryMembersCountries3"></app-mock>
+      </div>
+    </div>
+    <div class="c-countries">
+      <div class="c-countries__title">Membros</div>
+      <div class="c-countries__countries-names">
+        <app-mock [memberCountries]="memberCountries"></app-mock>
+      </div>
+    </div>
+  </div>
+  <div class="c-show-informations">
+    <div class="c-show-informations__which-country">
+      Você escolheu o país: {{ title }}
+    </div>
+    <div class="c-show-informations__capitals">Capital: {{ capitals }}</div>
+    <div class="c-show-informations__language">Idioma: {{ language }}</div>
+    <div class="c-show-informations__population">
+      População: {{ population }}
+    </div>
+  </div>
+</section>

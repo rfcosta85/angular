@@ -1,0 +1,70 @@
+.c-capitals {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+
+    background: linear-gradient(
+      90deg,
+      rgba(191, 184, 22, 1) 0%,
+      rgba(121, 9, 19, 1) 40%,
+      rgba(0, 212, 255, 1) 100%
+    );
+
+    color: white;
+
+    padding: 30px;
+  }
+
+  &__which-capitals {
+    margin: 15px 15px 0 15px;
+    padding: 15px;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    border: solid black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .c-research {
+    display: flex;
+    flex-direction: column;
+
+    &__subtitle {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    &__input {
+      margin-top: 15px;
+    }
+  }
+  .c-countries-members-list,
+  .c-countries-affiliate-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &__countries {
+      margin-top: 15px;
+    }
+  }
+  .c-showCountry-informations {
+    margin: 15px 0 0 15px;
+
+    &__capitals {
+      margin-top: 15px;
+    }
+  }
+}

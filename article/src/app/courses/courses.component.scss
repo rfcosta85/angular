@@ -1,0 +1,52 @@
+.c-courses {
+  &__title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__subtitle {
+    margin-top: 15px;
+
+    &--courses-title {
+      text-transform: uppercase;
+    }
+  }
+
+  .front-end {
+    background-color: rgba(255, 0, 0, 0.589);
+    color: white;
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: solid 1px;
+  }
+
+  .back-end {
+    background-color: rgba(0, 0, 255, 0.589);
+    color: white;
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: solid 1px;
+  }
+
+  .devops {
+    background-color: rgba(199, 131, 5, 0.589);
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-shadow: solid 1px;
+  }
+
+  .data-science {
+    background-color: rgba(8, 122, 84, 0.589);
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-shadow: solid 1px;
+  }
+}

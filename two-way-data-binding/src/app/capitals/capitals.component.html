@@ -1,0 +1,47 @@
+<section class="c-capitals">
+  <div class="c-capitals__title">Qual Capital?</div>
+  <div class="c-capitals__which-capitals">
+    <div class="c-research">
+      <div class="c-research__subtitle">
+        Quer saber quais são as capitais dos países do mercosul?
+      </div>
+      <div class="c-research__input">
+        Digite o país desejado:
+        <input type="text" [(ngModel)]="title" placeholder="Digite um país" />
+        <button class="c-research__button" (click)="getText()">
+          Pesquisar
+        </button>
+      </div>
+    </div>
+    <div class="c-countries-members-list">
+      <div class="c-countries-members-list__title">Países Membros</div>
+      <ng-container *ngFor="let list of membersCountries">
+        <div class="c-countries-members-list__countries">
+          {{ list }}
+        </div>
+      </ng-container>
+    </div>
+    <div class="c-countries-affiliate-list">
+      <div class="c-countries-affiliate-list__title">Países Afiliados</div>
+      <ng-container *ngFor="let list of affiliateCountries">
+        <div class="c-countries-affiliate-list__countries">
+          {{ list }}
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <div class="c-showCountry-informations">
+    <div class="c-showCountry-informations__choice">
+      Você escolheu o país: {{ title }}
+    </div>
+    <div class="c-showCountry-informations__capitals">
+      Capital: {{ capitals }}
+    </div>
+    <div class="c-showCountry-informations__language">
+      Idioma: {{ language }}
+    </div>
+    <div class="c-showCountry-informations__population">
+      População: {{ population }}
+    </div>
+  </div>
+</section>
